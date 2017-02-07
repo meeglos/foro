@@ -38,7 +38,7 @@ class PostsListTest extends FeatureTestCase
         ]);
 
 //        dd($first->toArray(), $last->toArray());
-        
+
         $this->visit('/')
             ->see($last->title)
             ->dontSee($first->title)
